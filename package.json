@@ -1,0 +1,23 @@
+{
+  "name": "nearestdrivers",
+  "version": "1.0.0",
+  "description": "A small library which has common code for finding the nearest drivers ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adarshtfs/nearestdrivers.git"
+  },
+  "keywords": [
+    "nearest",
+    "drivers"
+  ],
+  "author": "adarsh raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshtfs/nearestdrivers/issues"
+  },
+  "homepage": "https://github.com/adarshtfs/nearestdrivers"
+}
