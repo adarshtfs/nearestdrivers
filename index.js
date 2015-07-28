@@ -19,14 +19,14 @@ var COLLECTION_DEVICEDETAILS = 'device_details';
 
 var nearest_driver = {
 
-    initConnection = function(connectionString,calback){
+    initConnection : function(connectionString,calback){
 
         MongoClient.connect(connectionString, function(err, dbc) {
             if(err) throw err;
             callback(dbc);
         });
     },
-    getNearestDrivers = function(type,city,Condition,cartypes,options){
+    getNearestDrivers : function(type,city,Condition,cartypes,options){
 
 
         var time_in_seconds_to_mark_signal_loss = options.time_in_seconds_to_mark_signal_loss;
@@ -54,7 +54,7 @@ var nearest_driver = {
 
         if(type === 'api_server'){
 
-            
+
             query['$or']=conditions;
 
             var projection  = { "latitude": 1, "longitude": 1, "meterOffTime": 1, "dispatchPreference": 1, "blackmarkedDriver": 1, "carType": 1 };
