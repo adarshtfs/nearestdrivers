@@ -16,7 +16,7 @@ var settings = JSON.parse(fs.readFileSync(__dirname + "/settings.json", 'utf8'))
 
 var nearest_driver = {
 
-    generateQuery : function() {
+    generateQuery : function(callback) {
 
 
         var time_in_seconds_to_mark_signal_loss = settings.time_in_seconds_to_mark_signal_loss;
