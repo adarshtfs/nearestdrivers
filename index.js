@@ -1,3 +1,6 @@
+var fs = require('fs');
+var settings = JSON.parse(fs.readFileSync(__dirname + "/settings.json", 'utf8'));
+
 /*
 
     nearestDrivers function will accept
