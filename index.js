@@ -39,7 +39,7 @@ var nearest_driver = {
             loggedInEpochTime: {$lt: login_time_cutoff.getTime()}
             /*,meterOffTime: {$lt:meteoff_coolof_time.toString()}*/
         };
-
+        callback(query);
     }
 
 }
