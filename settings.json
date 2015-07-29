@@ -1,0 +1,5 @@
+{
+  "time_in_seconds_to_mark_signal_loss": 180,
+  "meter_off_cooltime_seconds": 60,
+  "login_cut_off_time": 2
+}
