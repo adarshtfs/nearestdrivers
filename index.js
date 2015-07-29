@@ -1,19 +1,3 @@
-var MongoClient = require('mongodb').MongoClient,
-    logger = require("simplehelper").logger.getInstance(),
-    fs = require('fs');
-
-var replicaDB_Con = undefined;
-var COLLECTION_DEVICEDETAILS = 'device_details';
-var settings = JSON.parse(fs.readFileSync(__dirname + "/settings.json", 'utf8'));
-var connectionString = settings.REPLICA_SET_CONN_URL_SLAVE_READ;
-
-MongoClient.connect(connectionString, function(err, dbc) {
-    if(err) throw err;
-    replicaDB_Con= dbc;
-});
-
-
-
 /*
 
     nearestDrivers function will accept
@@ -29,7 +13,7 @@ MongoClient.connect(connectionString, function(err, dbc) {
 
 var nearest_driver = {
 
-    generateQuery : function(type,city,conditions) {
+    generateQuery : function() {
 
 
         var time_in_seconds_to_mark_signal_loss = settings.time_in_seconds_to_mark_signal_loss;
